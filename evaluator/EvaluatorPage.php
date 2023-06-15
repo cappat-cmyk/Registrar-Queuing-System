@@ -104,11 +104,11 @@ if(!empty($emailAdd) && isset($_POST["btn_save"]) && ($_POST['transactiontype'] 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
     
-        $mail->Username = 'noreply.uphslregistrar@gmail.com'; // YOUR gmail email
-        $mail->Password = 'qazlohskyhmbogtz '; // YOUR gmail password
+        $mail->Username = ''; // YOUR gmail email
+        $mail->Password = ' '; // YOUR gmail password
     
         // Sender and recipient settings
-        $mail->setFrom('noreply.uphslregistrar@gmail.com', 'noreply-uphslregistrar');
+        $mail->setFrom('', '');
         $mail->addAddress($email_to, $name);
     
         // Setting the email content
