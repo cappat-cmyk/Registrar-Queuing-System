@@ -45,12 +45,12 @@ function sendResetPasswordEmail($email, $token)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->Username = 'noreply.uphslregistrar@gmail.com'; // YOUR gmail email
-        $mail->Password = 'qazlohskyhmbogtz'; // YOUR gmail password
+        $mail->Username = ''; // YOUR gmail email
+        $mail->Password = ''; // YOUR gmail password
 
         // Sender and recipient settings
-        $mail->setFrom('noreply.uphslregistrar@gmail.com', 'noreply.uphslregistrar');
-        $mail->addAddress($email, 'noreply.uphslregistrar');
+        $mail->setFrom('sample@gmail.com', '');
+        $mail->addAddress($email, '');
 
         // Setting the email content
         $mail->IsHTML(true);
